@@ -1,6 +1,68 @@
+/*:root: equivale a toda estrutura do  elemento html, é parecida com a tag html com a diferença que a especifidade de :root é maior.*/
+:root {
+    --Background-blue-Dark: #122ab2;
+    --Background-blue-Bright: #2c70ff;
+    --Background-Gray-Soft: #f7f7f7;
+    --Row-Purple: #ae81ff;
+    --Row-Pink: #f9265e;
+    --Row-Blue:#66d9eb;
+    --Color-Gray-Soft: #a4a4a4;
+    --Color-Gray-Strong: #7c7c7c;
+    --Color-Black-Bright: #222222;
+}
+/* Gerais - Reset */
 *{
     font-family: 'Nunito Sans', sans-serif;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
 }
-:root {
-    
+.superinfo-bg {
+    background-color: var(--Background-blue-Dark);
+    color: #fff;
+}
+.superinfo {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 10px 0;
+}
+.superinfo a {
+    color: #fff;
+    text-decoration: none;
+}
+.menu-bg {
+    background-color: var(--Background-blue-Bright);
+}
+.menu {
+    max-width: 960px;
+    margin: 0 auto;
+    display: flex;
+    /*alinha o elemento na horizontal*/
+    justify-content: space-between;
+    /*alinha o elemento na vertical*/
+    align-items: center;
+}
+.menu a {
+    color: #fff;
+    text-decoration: none;
+}
+.menu-logo a {
+    font-size: 2.25em;
+    font-weight: bold;
+}
+.menu-nav ul{
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+}
+.menu-nav a {
+    font-size: 1.25em;
+    padding: 10px;
+    transition: 1s;
+}
+.menu-nav a:hover {
+    color: var(--Background-blue-Dark);
 }
